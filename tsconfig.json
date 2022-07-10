@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2015",
-    "module": "CommonJS",
+    "module": "ES6",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "outDir": "./bin"
   },
   "include": ["./src/index.ts"]
 }

@@ -1,12 +1,17 @@
 {
   "name": "tinner",
-  "version": "1.0.2",
-  "main": "index.js",
+  "version": "1.0.6",
+  "main": "src/index.ts",
   "repository": "https://github.com/DhanielB/ton.git",
   "author": "Dhaniel Brandão <dhanielbrandao2@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "tinner": "bin/src/index.js"
+  },
   "scripts": {
-    "dev": "sucrase-node src/index.ts"
+    "dev": "sucrase-node src/index.ts",
+    "start": "node ./bin/src/index.js",
+    "build": "npx tsc"
   },
   "devDependencies": {
     "@types/babel__core": "^7.1.19",
@@ -19,12 +24,12 @@
     "@babel/plugin-transform-typescript": "^7.18.8",
     "axios": "^0.27.2",
     "big-json": "^3.1.0",
+    "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "enquirer": "^2.3.6",
     "fast-extract": "^0.3.3",
     "gunzip-maybe": "^1.4.2",
     "loadsh": "^0.0.4",
-    "tinner": "^1.0.1",
     "yargs": "^17.5.1"
   }
 }
