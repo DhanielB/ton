@@ -1,6 +1,6 @@
 {
-  "name": "ton",
-  "version": "1.0.0",
+  "name": "tinner",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/DhanielB/ton.git",
   "author": "Dhaniel Brandão <dhanielbrandao2@gmail.com>",
@@ -9,15 +9,22 @@
     "dev": "sucrase-node src/index.ts"
   },
   "devDependencies": {
+    "@types/babel__core": "^7.1.19",
     "@types/node": "^18.0.3",
     "sucrase": "^3.23.0"
   },
   "dependencies": {
     "@babel/core": "^7.18.6",
-    "@babel/parser": "^7.18.8",
     "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+    "@babel/plugin-transform-typescript": "^7.18.8",
     "axios": "^0.27.2",
+    "big-json": "^3.1.0",
+    "commander": "^9.3.0",
+    "enquirer": "^2.3.6",
+    "fast-extract": "^0.3.3",
+    "gunzip-maybe": "^1.4.2",
     "loadsh": "^0.0.4",
+    "tinner": "^1.0.1",
     "yargs": "^17.5.1"
   }
 }
